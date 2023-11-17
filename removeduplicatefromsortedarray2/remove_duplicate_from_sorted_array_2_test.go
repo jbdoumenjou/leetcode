@@ -1,4 +1,4 @@
-package main
+package removeduplicatefromsortedarray2
 
 import (
 	"reflect"

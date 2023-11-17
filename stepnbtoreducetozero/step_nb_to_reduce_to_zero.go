@@ -1,4 +1,4 @@
-package main
+package stepnbtoreducetozero
 
 // This is a simulation problem;
 // all we have to do to arrive at the correct result is follow the instructions.

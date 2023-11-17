@@ -1,4 +1,4 @@
-package main
+package richest_customer_wealth
 
 import "testing"
 

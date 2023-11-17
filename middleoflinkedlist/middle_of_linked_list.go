@@ -1,4 +1,4 @@
-package main
+package middleoflinkedlist
 
 // ListNode Definition for singly-linked list.
 type ListNode struct {

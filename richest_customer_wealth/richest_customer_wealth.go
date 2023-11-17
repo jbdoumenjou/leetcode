@@ -1,4 +1,4 @@
-package main
+package richest_customer_wealth
 
 // You are given an m x n integer grid accounts where accounts[i][j] is the amount of money the ith customer has in the jth bank.
 // Return the wealth that the richest customer has.

@@ -1,6 +1,9 @@
-package main
+package removeelement
 
-import "testing"
+import (
+	"slices"
+	"testing"
+)
 
 var tests = []struct {
 	name string
@@ -35,28 +38,22 @@ var tests = []struct {
 }
 
 func Test_removeElement(t *testing.T) {
-	type args struct {
-		nums []int
-		val  int
-	}
-
 	for _, tt := range tests {
+		tt := tt
 		t.Run(tt.name, func(t *testing.T) {
-			if got := removeElement(tt.nums, tt.val); got != tt.want {
+			nums := slices.Clone(tt.nums)
+			if got := removeElement(nums, tt.val); got != tt.want {
 				t.Errorf("removeElement() = %v, want %v", got, tt.want)
 			}
 		})
 	}
 }
-func Test_removeElementHiden(t *testing.T) {
-	type args struct {
-		nums []int
-		val  int
-	}
-
+func Test_removeElementHidden(t *testing.T) {
 	for _, tt := range tests {
+		tt := tt
 		t.Run(tt.name, func(t *testing.T) {
-			if got := removeElementHidden(tt.nums, tt.val); got != tt.want {
+			nums := slices.Clone(tt.nums)
+			if got := removeElementHidden(nums, tt.val); got != tt.want {
 				t.Errorf("removeElement() = %v, want %v", got, tt.want)
 			}
 		})
